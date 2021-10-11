@@ -1,1 +1,143 @@
 
+    /* modal general */
+.module {
+    display: none; 
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.2); 
+}
+  
+    /* modal content */
+.module-cont {
+    background-color: white;
+    margin: auto;
+    overflow: auto;
+    border-radius: 10px;
+    padding: 0;
+    width: 70%;
+    max-width: 70%;
+    height: 100vh;
+}
+
+.module-h {
+    padding: 2px 16px;
+    background-color: white;
+    color: rgb(34, 34, 36);
+    border-radius: 10px;
+}
+  
+
+    /* close button 1 */
+.clo1 {
+    color: rgb(122, 223, 189);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.clo1:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+
+    /* use to have horizontal bars and icon on the same line */
+.hrA {
+    display: flex;
+    margin-left: 36%;
+}
+
+    /* use to create a border on top and move it down to fix with the middle of the icon */
+.hr-line {
+    border-top-style:solid;
+    min-width: 12%;
+    margin-top:24px;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.h2F{
+    text-align: center;
+}
+
+.module-b {
+    padding: 0% 15%;
+    text-align: center;
+}
+
+
+
+    /* image background */
+.imgBG {
+    position: relative;
+    background-color: rgb(168, 64, 64);
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 0;
+    
+}
+
+.imgFormat{
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.module-f {
+    background-color: white;
+    color: rgb(34, 34, 36);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+    /* close button 2 */
+
+.clo2 {
+    background-color: rgb(122, 223, 189);
+    border: none;
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.clo2:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*                main page's images css                        */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+* {
+    box-sizing: border-box
+}
+.imgElements {
+    width: 10%;
+    background-color: rgb(153, 46, 46);
+
+}
+.row  {
+    
+    content: "";
+    display: table;
+    clear: both;
+}
+
