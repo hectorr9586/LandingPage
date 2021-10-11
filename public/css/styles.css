@@ -2,6 +2,34 @@
 #contact{
   margin-top: 30px;
 }
+
+.startsec {
+  background: #66CDAA;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.circ{
+  border-radius: 50%;
+}
+
+.linea{
+  border: none;
+  height: 50px solid #fff;
+  background-color: #fff;
+  width: 75px;
+  margin: 10px;
+}
+
+.orden{
+  display: flex;
+  justify-content: center;
+}
+
 .ContactMe{
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
