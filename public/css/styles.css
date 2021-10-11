@@ -14,7 +14,7 @@
   justify-content: center;
   align-items: center;
 }
-.divider-custom .divider-custom-line {
+.divider-custom .divider-custom-line1 {
   width: 100%;
   max-width: 7rem;
   height: 0.25rem;
@@ -22,13 +22,13 @@
   border-radius: 1rem;
   border-color: #2c3e50;
 }
-.divider-custom .divider-custom-line:first-child {
+.divider-custom .divider-custom-line1:first-child {
   margin-right: 1rem;
 }
-.divider-custom .divider-custom-line:last-child {
+.divider-custom .divider-custom-line1:last-child {
   margin-left: 1rem;
 }
-.divider-custom .divider-custom-icon {
+.divider-custom .divider-custom-icon1 {
   color: #2c3e50;
   max-width: 50px;
 }
