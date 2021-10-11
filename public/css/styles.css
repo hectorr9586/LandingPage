@@ -1,3 +1,14 @@
+h6{
+    color: white;
+    text-align: center;
+}
+strong {
+    color: #2EAA94;
+}
+
+p{
+    color: white;
+}
 img {
   display: block;
   margin-left: auto;
