@@ -8,14 +8,16 @@
     <!-- Styles  -->
     <link rel="stylesheet" href="./css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link href="fontawesome/css/fontawesome.css" rel="stylesheet">
     <title>Landing Page</title>
     <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/da0dc56cbc.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/eff33ebd9b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- JS -->
-    <script src="./js/index.js"></script>
     <!--LPB5-06-->
     <section class="page-section" id="contact">
         <div class="container">
@@ -58,6 +60,77 @@
         </div>
     </section>  
 
+    <!-- Portfolio section here -->
+    <div id="portfolio-container" class="container text-center mb-3">
+        <div id="portfolio-header">
+            <h3>Portfolio</h3>
+            <div id="header" class="row text-center w-100 justify-content-center">
+                <div class="col-2"><strong><hr></strong></div>
+                <div class="col-1"><i class="fas fa-star fa-2x"></i></div>
+                <div class="col-2"><strong><hr></strong></div>
+            </div>
+        </div>
+        <div class="mt-5">
+            <div id="portfolio-content" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-between">
+                <div class="col mb-3" id="sample">
+                    <div class="card w-100">
+                        <img src="https://placeimg.com/640/480/tech" class="card-img-top" alt="project-1">
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card w-100">
+                        <img src="https://placeimg.com/640/480/nature" class="card-img-top" alt="project-2">
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card w-100">
+                        <img src="https://placeimg.com/640/480/arch" class="card-img-top" alt="project-3">
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card w-100">
+                        <img src="https://placeimg.com/640/480/animals" class="card-img-top" alt="project-4">
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card w-100">
+                        <img src="https://placeimg.com/640/480/tech" class="card-img-top" alt="project-5">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card w-100">
+                        <img src="https://placeimg.com/640/480/nature" class="card-img-top" alt="project-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="startsec">
+        <div>
+            <p><img src="img/Team.png" width="100px" height="100px"></p>
+            <h1>POD 5</h1>
+            <p> <i class="fas fa-star"></i> </p>
+            <p>Engineers - Web Designers - Developers</p>
+        </div>
+    </section>
+
+    <nav class="navbar navbar-collapse" style="background-color: #3B5063" >
+        <a class="start" href="#">START BOOTSTRAP</a>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white;">PORTFOLIO</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white;">CONTACT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white;">ABOUT</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- JS -->
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
