@@ -9,7 +9,7 @@ var imgDesc=document.getElementById("imgD");
 var imgShowed=document.getElementById("imgSh");
 
 //get all portafolio images'references
-var imgObj=document.getElementsByClassName("imgElements");
+var imgObj=document.getElementsByClassName("hov1");
 //get numeber of images
 let imgObjAm=Object.keys(imgObj).length;
 
@@ -29,16 +29,18 @@ clos2.onclick=function() {
   }
 }
 
+
+//backG.style.height= (backG.style.heigh)/ backG.style.w;
+
+
 //make a 
-document.querySelectorAll(".imgElements").forEach(item => {
-    item.addEventListener("mouseover", event => {
-        
-        for (let i=0; i<=(imgObjAm-1);i++){
-            imgObj[i].addEventListener("mouseover", function() {
-                inform(i);
-                m1.style.display = "block";
-              });
-        }
+document.querySelectorAll(".hov1").forEach(item => {
+    item.addEventListener("click", event => {
+        let height = document.querySelector('#bGround').clientHeight
+        let item_vol= item.id;
+        console.log(height);
+        inform(item_vol);
+        m1.style.display = "block";
     })
   });
 
@@ -49,58 +51,47 @@ function inform(image) {
     let ground="N/A";
     switch (image)
     {
-        case 0:
-            titles= "Imag 1";
-            descrip= "This is the image 1."
-            show= "./img/hou.png";
-            ground="purple";
+        case "Imag1":
+            titles= "Technology";
+            descrip= "This is about technology. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper sodales congue. Etiam consequat ornare arcu quis facilisis. Curabitur et egestas ligula. Ut porta tempus condimentum. Pellentesque lacinia lorem in molestie suscipit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec euismod ultrices condimentum."
+            show= "https://placeimg.com/640/480/tech";
+            ground="rgb(218, 81, 57)";
             break;
-        case 1:
-            titles= "Imag 2";
-            descrip= "This is the image 2."
-            show= "./img/hou.png";
-            ground="purple";
+        case "Imag2":
+            titles= "Nature";
+            descrip= "This is about nature. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper sodales congue. Etiam consequat ornare arcu quis facilisis. Curabitur et egestas ligula. Ut porta tempus condimentum. Pellentesque lacinia lorem in molestie suscipit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec euismod ultrices condimentum."
+            show= "https://placeimg.com/640/480/nature";
+            ground="rgb(122, 223, 189)";
             break;
-        case 2:
-            titles= "Imag 3";
-            descrip= "This is the image 3."
-            show= "./img/submarine.png";
-            ground="blue";
+        case "Imag3":
+            titles= "Architecture";
+            descrip= "This is about architecture. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper sodales congue. Etiam consequat ornare arcu quis facilisis. Curabitur et egestas ligula. Ut porta tempus condimentum. Pellentesque lacinia lorem in molestie suscipit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec euismod ultrices condimentum."
+            show= "https://placeimg.com/640/480/arch";
+            ground="rgb(124, 122, 223)";
             break;
-        case 3:
-            titles= "Imag 4";
-            descrip= "This is the image 4."
-            show= "./img/hou.png";
-            ground="purple";
+        case "Imag4":
+            titles= "Animals";
+            descrip= "This is about animals. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper sodales congue. Etiam consequat ornare arcu quis facilisis. Curabitur et egestas ligula. Ut porta tempus condimentum. Pellentesque lacinia lorem in molestie suscipit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec euismod ultrices condimentum."
+            show= "https://placeimg.com/640/480/animals";
+            ground="rgb(218, 57, 178)";
             break;
-        case 4:
-            titles= "Imag 5";
-            descrip= "This is the image 5."
-            show= "./img/hou.png";
-            ground="purple";
+        case "Imag5":
+            titles= "Technology";
+            descrip= "This is about technology. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper sodales congue. Etiam consequat ornare arcu quis facilisis. Curabitur et egestas ligula. Ut porta tempus condimentum. Pellentesque lacinia lorem in molestie suscipit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec euismod ultrices condimentum."
+            show= "https://placeimg.com/640/480/tech";
+            ground="rgb(213, 223, 122)";
             break;
-        case 5:
-            titles= "Imag 6";
-            descrip= "This is the image 6."
-            show= "./img/hou.png";
-            ground="purple";
-            break;
-        case 6:
-            titles= "Imag 7";
-            descrip= "This is the image 7."
-            show= "./img/hou.png";
-            ground="purple";
-            break;
-        case 7:
-            titles= "Imag 8";
-            descrip= "This is the image 8."
-            show= "./img/hou.png";
-            ground="purple";
+        case "Imag6":
+            titles= "Nature";
+            descrip= "This is about nature. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper sodales congue. Etiam consequat ornare arcu quis facilisis. Curabitur et egestas ligula. Ut porta tempus condimentum. Pellentesque lacinia lorem in molestie suscipit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec euismod ultrices condimentum."
+            show= "https://placeimg.com/640/480/nature";
+            ground="rgb(223, 151, 122)";
             break;
         default:
             titles= "IError";
             descrip= "This is an error."
-            show= "./img/hou.png";
+            show= "./img/team.png";
+            ground="rgb(200, 122, 223)";
             break;
     }
     imgTitle.textContent= titles;
