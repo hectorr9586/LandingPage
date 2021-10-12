@@ -126,10 +126,10 @@ line-height: 1.2;
   max-width: 50px;
 }
 nav {
-  padding-left: 110px;
+ padding-left: 110px;
    height: 100px;
    padding-right: 200px;
-   }
+}
 
 .start{
    color:white;
@@ -147,3 +147,163 @@ nav {
 strong {
   color: #2EAA94;
 }
+
+
+
+
+/* -------------------------------   css modal begging ---------------------------------------- */
+
+    /* modal general */
+.module {
+    display: none; 
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.2); 
+}
+  
+    /* modal content */
+.module-cont {
+    background-color: white;
+    margin: auto;
+    overflow: auto;
+    border-radius: 10px;
+    padding: 0;
+    width: 70%;
+    max-width: 70%;
+    height: 100vh;
+}
+
+.module-h {
+    padding: 2px 16px;
+    background-color: white;
+    color: rgb(34, 34, 36);
+    border-radius: 10px;
+}
+  
+
+    /* close button 1 */
+.clo1 {
+    color: rgb(122, 223, 189);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.clo1:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+
+    /* use to have horizontal bars and icon on the same line */
+.hrA {
+    display: flex;
+    margin-left: 36%;
+}
+
+    /* use to create a border on top and move it down to fix with the middle of the icon */
+.hr-line {
+    border-top-style:solid;
+    min-width: 12%;
+    margin-top:24px;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.h2F{
+    text-align: center;
+}
+
+.module-b {
+    padding: 0% 15%;
+    text-align: center;
+}
+
+    /* image background */
+.imgBG {
+    /* a flex to align the image inside*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    min-height:35vh;
+    border-radius: 10px;
+    padding: 0;
+    background-color: rgb(168, 64, 64);
+}
+
+.newP {
+    color: rgb(34, 34, 36);
+    text-align: center;
+}
+
+.imgFormat{
+    
+    /* became the image a circle */
+    /* vh/vw relation is of 0.3588 (230.3/641) */
+    /* to get width(sqr)= height * 0.3588 = */
+    /* this option was deleted, width and width will be set with px intead of vh/vw*/
+    
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(168, 64, 64);
+}
+    
+.hov1{
+    /* position absolute to put the icon adove the image*/
+    position: absolute;
+    /* flex to align the icon*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    color: white;
+    background-color: #66CDAA;
+    height: 100%;
+    width: 100%; 
+    border-radius: 2.5px;
+    transition: .5s ease;
+    opacity: 0;
+}
+.card.w-100:hover .hov1 {
+    opacity: 1;
+}
+
+
+.module-f {
+    background-color: white;
+    color: rgb(34, 34, 36);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+    /* close button 2 */
+
+.clo2 {
+    background-color: rgb(122, 223, 189);
+    border: none;
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.clo2:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* -------------------------------   css modal end ---------------------------------------- */
+
