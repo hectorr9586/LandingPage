@@ -129,21 +129,28 @@ nav {
   padding-left: 110px;
    height: 100px;
    padding-right: 200px;
+   
    }
 
-.start{
+.navbar{
    color:white;
    font-size: 25px;
    font-weight: bold;
    text-decoration: none;
+
 }
 
 .nav {
    font-weight: bold;
    font-size: 16px;
+   display: flex;
    
 }
-
-strong {
-  color: #2EAA94;
+div{
+  display: block;
 }
+
+footer{
+  display: block;
+}
+
